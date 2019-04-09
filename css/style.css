@@ -21,7 +21,7 @@ body{
     overflow: hidden;
 }
 
-
+/* ============== Header-area ================ */
 .menu .navbar-light .navbar-nav .nav-link {
     color:#96a6a7;
     font-family: 'Gotham Medium';
@@ -59,4 +59,76 @@ body{
 .login i {
 	padding-right: 10px;
 	display: inline-block;	
+}
+
+/* ============== Search-area ================ */
+
+#search-area{
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.search-area-heading{
+    font-family: 'Gotham Medium';
+    color: #fff;
+    font-size:30px;
+}
+.form select{
+    color: #fff;
+    font-family: 'Gotham Book';
+    font-size: 18px;
+}
+.form .form-control{
+    height: 50px;
+    background: #5d5b54;
+    border: none;
+    border-radius: 30px;
+	padding: 6px 30px;
+	color: #fff;
+}
+
+.select-icon{
+    position: relative;
+}
+.select-icon .form-control{
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+} 
+.select-icon::after{
+    content: "\f107";
+	position: absolute;
+	right: 27px;
+	top: 5px;
+	font-family: "fontAwesome";
+	color: #fff;
+	font-size: 25px;
+	pointer-events: none;
+
+
+}
+.form .form-control::-webkit-input-placeholder{
+    font-family: 'Gotham Book';
+    font-size: 18px;
+	color: #fff;
+}
+.form .form-control::-moz-placeholder{
+    font-family: 'Gotham Book';
+    font-size: 18px;
+	color: #fff;
+}
+.form .form-control::-ms-placeholder{
+    color: #fff;
+    font-family: 'Gotham Book';
+    font-size: 18px;
+    
+}
+.submit-search .form-control{
+    display: inline-block;
+    text-transform: uppercase;
+    width: auto;
+    background: #e94e38;
+    font-family: 'Gotham Book';
+    font-size: 18px;
 }
