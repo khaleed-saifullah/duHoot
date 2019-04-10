@@ -81,7 +81,7 @@ body{
 .form .form-control{
     height: 50px;
     background: #5d5b54;
-    border: none;
+    border: 1px solid #96a6a7 ;
     border-radius: 30px;
 	padding: 6px 30px;
 	color: #fff;
@@ -105,8 +105,6 @@ body{
 	color: #fff;
 	font-size: 25px;
 	pointer-events: none;
-
-
 }
 .form .form-control::-webkit-input-placeholder{
     font-family: 'Gotham Book';
@@ -132,3 +130,316 @@ body{
     font-family: 'Gotham Book';
     font-size: 18px;
 }
+
+/* ============== Filter-area ================ */
+
+.tab-list ul,.filter-icons ul{
+    margin: 0;
+    padding: 0;
+}
+.tab-list ul li,.filter-icons ul li{
+    list-style: none;
+    float: left;
+}
+.tab-list ul li a{
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Gotham Medium';
+    margin-right: 20px;
+    color: #96a6a7;
+    font-size:13px;
+}
+.tab-list ul li.active a{
+    color: #e94e38;
+}
+
+.form.filter-form .form-control{
+    background: #fff;    
+    color: #e94e38;
+    font-size: 15px;
+}
+.form.filter-form .select-icon::after{
+	color: #aebabb;	
+}
+
+.form.filter-form .filter-search .form-control{
+    color: #96a6a7;
+    display: inline-block;
+    width: auto;
+    font-family: 'Gotham Book';
+    padding-right: 38px;
+    padding-left: 26px
+}
+.filter-search{
+    position: relative;
+}
+.filter-search::after{
+    position: absolute;
+	content: "\f041";
+	font-family: "fontAwesome";
+	top: 10px;
+	right: 20px;
+    font-size: 21px;
+    color: #96a6a7;       
+}
+.filter-icons ul li a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    background: red;
+    text-align: center;
+    margin-right: 6px;
+    color: #fff;
+    transition: .3s;
+
+}
+.filter-icons ul li > span {
+	padding: 14px 10px;
+	display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Gotham Medium';
+    color: #96a6a7;
+    font-size:13px;
+	
+}
+.filter-icons ul li a img{
+    display: inline-block;   
+    padding-top: 13px;
+    
+}
+.filter-icons ul li.filter-icon1 a {
+	background-color: #1baf5d;
+}
+.filter-icons ul li.filter-icon2 a,.filter-icons ul li.filter-icon3 a {
+	background-color: #b6c0c1;
+}
+
+.filter-icons ul li.filter-icon4 a {
+	background-color: #f19e1f;
+}
+.filter-icons ul li.filter-icon5 a {
+	background-color: #88499c;
+}
+.filter-icons ul li a:hover {
+	transform: rotate(180deg);
+	background-color: red;
+}
+
+/* ============== Post-area ================ */
+
+#post-area{
+    background: #f3f1f2;
+}
+.single-post{
+    background: #fff;
+    height: 330px;
+}
+.post-head{
+    position: relative;
+}
+.post-head img{
+    display: block;
+    width: 100%;
+    border-bottom: 5px solid #1baf5d;
+}
+.post-head.music-border img{
+    border-bottom: 5px solid #f19e1f;
+}
+.post-head.bus-border img{
+    border-bottom: 5px solid #88499c;
+}
+.img-icon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -24px;
+    text-align: center;
+    z-index: 10;
+}
+.img-icon a{
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1baf5d; 
+    text-align: center;  
+    border: 2px solid #fff;
+       
+}
+.img-icon a > img{
+    border-bottom: none;
+}
+.img-icon.music a{
+    background: #f19e1f; 
+}
+.img-icon.bus a{
+    background: #88499c; 
+}
+.img-icon a img{
+    width: auto;
+    display: inline-block;   
+    padding-top: 13px;
+}
+.post-price{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.post-price > span{
+    display: inline-block;
+    padding: 6px 15px;
+    background: #1baf5d;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Gotham Medium';
+    font-size:13px;
+}
+.post-hover{
+    transform: scale(0);
+	transition: .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(161, 112, 161, .7);
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+
+}
+.post-head:hover .post-hover{
+    transform: scale(1);
+}
+.show-more a{
+    text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 6px 15px;
+	border: 3px solid #fff;
+	border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.rating{
+    font-size: 18px;
+}
+
+.rating span:first-child{
+    padding-right: 20px;
+
+}
+.post-body h4{
+    color: #566375;
+    font-family: 'Gotham Medium';
+    font-size:16px;
+    margin-top: 25px;
+    text-align: center;
+}
+.post-body span{
+    display: block;
+    color: #1baf5d;
+    font-family: 'Gotham Medium';
+    font-size:14px;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.rating-main a > i{
+    color: #f19e1f;
+    font-size: 12px;
+}
+.rating-main span{
+    display: inline;
+    color: #566375;
+}
+
+.single-blog{
+    background: #fff;
+    height: 330px;
+}
+.blog-head{
+    position: relative;
+}
+.blog-head img{
+    display: block;
+    width: 100%;
+    border-bottom: 5px solid #1baf5d;
+}
+.blog-head.diff-col img{
+    border-bottom: 5px solid #f19e1f;
+}
+.blog-head.diff-col .img-icon a{
+    background: #f19e1f;
+}
+.blog-head.diff-col .img-icon img{
+    border-bottom: none;
+}
+.blog-head .img-icon{
+    text-align: start;
+    left: 20px;
+
+}
+.img-post{
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+}
+.img-post span{
+    color: #fff;
+    font-family: 'Gotham Medium';
+    font-size:18px;
+    text-transform: uppercase;
+    display: inline;
+}
+.img-post .rating-main{
+    display: inline;
+}
+.blog-body{
+    margin-top: 20px;
+}
+.blog-body .rating-main{
+    margin-top:10px;
+    margin-left: 90px; 
+}
+.blog-body .rating-main a > i{
+    font-size: 18px;
+}
+.blog-review .blog-review-img{
+    float: left;
+    margin-left: 14px;
+}
+.blog-review .blog-review-para{
+    padding-left: 90px;
+}
+.blog-review-para h3{
+    font-family: 'Gotham Bold';
+    font-size: 16px;
+    color: #566375;
+    text-transform: uppercase;
+}
+.blog-review-para p{
+    font-family: 'Gotham Book';
+    font-size: 14px;
+    color: #566375
+}
+.blog-review-para p > a{
+    font-family: 'Gotham Medium';
+    color: #566375;
+}
+
+.load-more a{
+    text-decoration: none;
+    color: #566375;
+    font-family: 'Gotham Medium';
+    font-size:18px;
+}
+#post-area .container{
+    padding-bottom: 30px; 
+    border-bottom: 1px solid #e2dee0;
+}
+
