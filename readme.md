@@ -5,7 +5,7 @@
 
 
 ## Live
-Demo [https://khaleed-saifullah.github.io/Restaurant/]( https://khaleed-saifullah.github.io/Restaurant/)
+Demo [https://khaleed-saifullah.github.io/duHoot/]( https://khaleed-saifullah.github.io/duHoot/)
 
 
 ## Built With
