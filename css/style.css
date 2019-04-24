@@ -24,10 +24,10 @@ body{
 .main-wrapper{
     overflow: hidden;
 }
-select.form-control:focus::-ms-value {
-  
+select.form-control:focus::-ms-value {  
   background-color: #5d5b54;
 }
+
 /* ============== Header-area ================ */
 .menu .navbar-light .navbar-nav .nav-link {
     color:#96a6a7;
@@ -237,8 +237,7 @@ select.form-control:focus::-ms-value {
     height: 50px;
     display: inline-block;
     border-radius: 50%;
-    background: red;
-    
+    background: red;    
     margin-right: 6px;
     color: #fff;
     transition: .3s;
@@ -246,14 +245,12 @@ select.form-control:focus::-ms-value {
 
 }
 .filter-icons ul li > span {
-
 	display: inline-block;
     text-transform: uppercase;
     font-family: 'Gotham Medium';
     color: #96a6a7;
     font-size:13px;
-    margin-right: 5px;
-	
+    margin-right: 5px;	
 }
 .filter-icons ul li a img{
     display: inline-block;
@@ -263,9 +260,7 @@ select.form-control:focus::-ms-value {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    
-    
-    
+           
 }
 .filter-icons ul li.filter-icon1 a {
 	background-color: #1baf5d;
