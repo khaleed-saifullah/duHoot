@@ -146,7 +146,10 @@ select.form-control:focus::-ms-value {
   border-radius: 30px;
   padding: 0px 23px;
   color: #fff;
-  padding-top: 15px;
+}
+
+.form-control {
+  line-height: 60px !important;
 }
 
 .select-icon {
