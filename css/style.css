@@ -10,7 +10,11 @@
     font-family: 'Gotham Bold';
     src: local('Gotham Bold'), url('../fonts/GothamBold.woff') format('woff');
 }
+input[type="text"], textarea,select {
+	outline: none;
+	box-shadow:none !important;
 
+}
 body{
     margin: 0;
     padding: 0;
@@ -20,7 +24,10 @@ body{
 .main-wrapper{
     overflow: hidden;
 }
-
+select.form-control:focus::-ms-value {
+  
+  background-color: #5d5b54;
+}
 /* ============== Header-area ================ */
 .menu .navbar-light .navbar-nav .nav-link {
     color:#96a6a7;
@@ -30,24 +37,55 @@ body{
 .menu .navbar{
     padding: 0;
 }
+.navbar-nav{
+	vertical-align: middle;
+}
+
+.search{
+    height: 76px;
+    width: 76px;
+    background: #e2dee0;  
+    position: relative;                            
+}
+
 .search a{
     display: inline-block;
-	padding: 20px 28px;
+	/*padding: 20px 28px;*/
 	font-size: 24px;
-	background: #e2dee0;
+	/*background: #e2dee0;*/
 	color: #fff;
+	text-decoration: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.login{
+    height: 76px;
+    width: 164px;
+    background: #e94e38;  
+    position: relative;                            
 }
 .login a{
     position: relative;
     display: inline-block;
     text-transform: uppercase;
     color: #fff;
-    background: #e94e38;
-    padding: 24px 35px;
+    /*background: #e94e38;*/
+    /*padding: 24px 35px;*/
     font-size: 19px;
-    text-decoration: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
 }
-.login a::after{
+
+.login::after{
     position: absolute;
     content: "";
     left: 100%;
@@ -55,6 +93,9 @@ body{
     bottom: 0;
     right: -500px;
     background: #e94e38;
+}
+.login a:hover{
+	text-decoration: none;
 }
 .login i {
 	padding-right: 10px;
@@ -73,6 +114,9 @@ body{
     color: #fff;
     font-size:30px;
 }
+
+
+
 .form select{
     color: #fff;
     font-family: 'Gotham Book';
@@ -83,8 +127,9 @@ body{
     background: #5d5b54;
     border: 1px solid #96a6a7 ;
     border-radius: 30px;
-	padding: 6px 23px;
+	padding: 0px 23px;
 	color: #fff;
+	vertical-align: middle;
 }
 
 .select-icon{
@@ -161,6 +206,9 @@ body{
 .form.filter-form .select-icon::after{
 	color: #aebabb;	
 }
+#filter-area .form.filter-form .form-group{
+    margin-bottom: 0;
+}
 
 .form.filter-form .filter-search .form-control{
     color: #96a6a7;
@@ -168,7 +216,8 @@ body{
     width: auto;
     font-family: 'Gotham Book';
     padding-right: 38px;
-    padding-left: 26px
+    padding-left: 26px;
+    vertical-align: middle;
 }
 .filter-search{
     position: relative;
@@ -193,24 +242,32 @@ body{
     display: inline-block;
     border-radius: 50%;
     background: red;
-    text-align: center;
+    
     margin-right: 6px;
     color: #fff;
     transition: .3s;
+    position: relative;
 
 }
 .filter-icons ul li > span {
-	padding: 14px 10px;
+	/*padding: 14px 10px;*/
 	display: inline-block;
     text-transform: uppercase;
     font-family: 'Gotham Medium';
     color: #96a6a7;
     font-size:13px;
+    margin-right: 5px;
 	
 }
 .filter-icons ul li a img{
-    display: inline-block;   
-    padding-top: 13px;
+    display: inline-block;
+     margin: 0;
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
     
     
 }
@@ -469,9 +526,13 @@ body{
 }
 
 .offer-icon{
-    display: table;
-    margin: auto;
+    /*display: table;
+    margin: auto;*/
+    text-align: center;
     
+}
+.offer-icon > div{
+	display: inline-block;
 }
 .offer-icon ul{
     margin: 0;
@@ -484,6 +545,9 @@ body{
     float: left;
     margin-right: 50px;
     
+}
+.offer-icon ul li:last-child{
+	margin-right: 0px;
 }
 
 .offer-icon ul li a{
@@ -513,6 +577,7 @@ body{
     color: #1baf5d;
     font-family: 'Gotham Medium';
     font-size:24px;
+    text-align: center;
 }
 
 .offer-list-image{
@@ -555,6 +620,7 @@ body{
     padding-left: 20px;
     padding-right: 135px;
     font-size: 18px;
+    outline: none;
 }
 .subscribe{
     position: absolute;
@@ -618,25 +684,28 @@ body{
        margin-right: 0px;
    }
    .tab-list ul li {   
-    float: none;
+        float: none;
     }
+
 }
 
 @media(max-width:768px){
+    
     .menu .search{
-        display: inline;
+        display: inline-block;
         
     }
     .menu .login{
-        display: inline;
+        display: inline-block;
     }
-    .login a::after{
+    
+    .login::after{
         display: none;
     }
-
-    .filter-icons{
-        margin-top: 30px;
+    #filter-area .form.filter-form .form-group{
+        margin-bottom: 5px;
     }
+    
     .filter-icons ul li a{
         width: 40px;
         height: 40px
@@ -661,13 +730,7 @@ body{
 }
 
 @media(max-width:576px){
-    #filter-area .form{
-        margin-top: 20px;
-    }
-    #filter-area .filter-icons{
-        display: table;
-        margin:10px auto 0 auto;
-    }
+    
     .offer-icon ul li{
         margin-right: 42px;
     }
@@ -683,10 +746,14 @@ body{
 
 
 @media(max-width:360px){
+    .tab-list{
+        text-align: center;
+    }
     .single-post,.single-blog{
         height: auto;
         margin-bottom: 5px;
     }
+
     .rating{
         display: block;
     }
