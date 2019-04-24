@@ -50,9 +50,7 @@ select.form-control:focus::-ms-value {
 
 .search a{
     display: inline-block;
-	/*padding: 20px 28px;*/
 	font-size: 24px;
-	/*background: #e2dee0;*/
 	color: #fff;
 	text-decoration: none;
     margin: 0;
@@ -73,8 +71,6 @@ select.form-control:focus::-ms-value {
     display: inline-block;
     text-transform: uppercase;
     color: #fff;
-    /*background: #e94e38;*/
-    /*padding: 24px 35px;*/
     font-size: 19px;
     margin: 0;
     position: absolute;
@@ -250,7 +246,7 @@ select.form-control:focus::-ms-value {
 
 }
 .filter-icons ul li > span {
-	/*padding: 14px 10px;*/
+
 	display: inline-block;
     text-transform: uppercase;
     font-family: 'Gotham Medium';
@@ -526,10 +522,7 @@ select.form-control:focus::-ms-value {
 }
 
 .offer-icon{
-    /*display: table;
-    margin: auto;*/
-    text-align: center;
-    
+    text-align: center;    
 }
 .offer-icon > div{
 	display: inline-block;
